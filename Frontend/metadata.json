@@ -1,0 +1,6 @@
+{
+  "name": "AI PDF Chat",
+  "description": "A modern, responsive ChatGPT-style frontend for chatting with your uploaded PDF documents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

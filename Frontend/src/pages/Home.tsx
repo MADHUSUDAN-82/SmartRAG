@@ -41,7 +41,7 @@ export default function Home() {
 
   const [apiUrl, setApiUrl] = useState<string>(() => {
     const saved = localStorage.getItem('ai-pdf-api-url');
-    return saved || 'http://localhost:8000';
+    return saved || 'https://smartrag-orpc.onrender.com';
   });
 
   const [isLoading, setIsLoading] = useState(false);

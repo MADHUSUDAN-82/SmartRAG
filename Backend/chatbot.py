@@ -23,7 +23,7 @@ load_dotenv()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ya frontend URL do
+    allow_origins=["https://smart-rag.vercel.app"],  # ya frontend URL do
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

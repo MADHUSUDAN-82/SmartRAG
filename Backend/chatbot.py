@@ -45,7 +45,7 @@ current_pdf_path = None
 # embeddings = HuggingFaceEmbeddings(
 #     model_name="sentence-transformers/all-MiniLM-L6-v2"
 # )
-embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
 # -------------------------------
 # REQUEST MODEL
@@ -60,7 +60,7 @@ class ChatRequest(BaseModel):
 #     temperature=0
 # )
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite",temperature = 0)
+llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash",temperature = 0)
 
 def split_chunks(text_chunks: list[str],chunk_size: int = 400,chunk_overlap: int = 80) -> list[str]:
     """
